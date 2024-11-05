@@ -154,12 +154,20 @@ body {
     }
 
     #afficher{
-        /* display: none; */
+        display: none;
         position: relative;
         /* right:500px;
         bottom:500px; */
+        color:red;
+        border-radius: 1px solid  #0c0b0c;
+        padding: 10px 20px; background-color: #aa28ac; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s; position: relative; bottom: 300px; right:800px;
 
     }
+    #afficher:hover {
+        background-color: #14212e;
+    }
+    
+    
 
     @keyframes copy {
         from{
