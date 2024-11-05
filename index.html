@@ -4,28 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Fan to Stack</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
     <div class="container">
+       
         <div class="stats">
+           
             <div>❤️ <span id="likes">0</span></div>
             <div>👎 <span id="dislikes">0</span></div>
+            
         </div>
         
         <div class="card-stack" id="cardStack">
-            <div class="card" id="card1"></div>
-            <div class="card" id="card2"></div>
-            <div class="card" id="card3"></div>
-            <div class="card" id="card4"></div>
-            <div class="card" id="card5"></div>
+            <div class="card" id="card1">Carte 1 : <span class="color-text" >Rouge corail clair </span></div>
+            <div class="card" id="card2">Carte 2 : <span class="color-text">Couleur : Turquoise</span></div>
+            <div class="card" id="card3">Carte 3 : <span class="color-text">Couleur : Bleu</span></div>
+            <div class="card" id="card4">Carte 4 : <span class="color-text">Couleur : Vert</span></div>
+            <div class="card" id="card5">Carte 5 : <span class="color-text">Couleur : Jaune</span></div>
+        </div>
+        
+        
+
+        <div class="controls" id="controls">
+            <div class="button" id="like" onclick="handleSwipe('right')">❤️</div>
+            <div class="button" id="dis_like" onclick="handleSwipe('left')" >👎</div>
         </div>
 
-        <div class="controls">
-            <div class="button" onclick="handleSwipe('left')">👎</div>
-            <div class="button" onclick="handleSwipe('right')">❤️</div>
+        <div id="likedCardsContainer" style="display: none; margin-top: 20px;">
+         
+            <div id="likedCards"></div>
         </div>
     </div>
 
-    <script></script>
+    <button id="afficher" onclick="afficherCartes()">afficher</button>
+
+    <script src="assets/js/action.js"></script>
+
+
 </body>
 </html>

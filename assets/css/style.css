@@ -53,6 +53,11 @@ body {
     background: #FFEEAD; 
     transform: rotate(20deg) translateX(20px);
 }
+.color-text {
+    font-weight: bold; /* Rend le texte en gras */
+    color: #FFFFFF; /* Couleur du texte en blanc */
+    font-size: 16px; /* Taille de la police */
+}
 
 /* Stacked positions */
 .stacked #card1 { 
@@ -115,3 +120,72 @@ body {
     justify-content: center;
    
 }
+/*  */
+
+#like{
+    position: relative;
+    left:300px;
+    bottom:280px;
+}
+#dis_like{
+    position: relative;
+    right:400px;
+    bottom:280px;
+
+}
+    /* Animation pour les cartes aimées */
+    .liked-card {
+        content: 'Cartes aimées :';
+        animation: fadeIn 0.5s ease-in-out;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        position: relative;
+        bottom:360px ;
+        display: none;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(80px); }
+        
+    }
+
+    #afficher{
+        /* display: none; */
+        position: relative;
+        /* right:500px;
+        bottom:500px; */
+
+    }
+
+    @keyframes copy {
+        from{
+            width: 500px;
+        }to{
+            width:0%;
+        }
+    
+    }
+.card{
+        animation-duration: 0.5s;
+        animation-name: copy;
+        
+    }
+   
+    .card-image {
+        width: 100%; 
+        border-radius: 10px;
+    }
+    
+    .color-text {
+        color: #fff; /* Couleur du texte */
+        margin-top: 10px; /* Espacement au-dessus du texte */
+    }
+   
+  .color-text{
+
+    position: relative; bottom:-180px; left: 10px;
+  }
